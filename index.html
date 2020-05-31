@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>刘顺/登录页面</title>
+    <link rel="short icon" href="Resource/icon.png">
+    <link rel="stylesheet" href="zhuyemian.css">
+    <style>
+        .login_img1{text-align: center;margin-top: 30px }
+        .login_div{
+            width: 90%;margin: 0 auto;
+            background: white;
+            border: 1px solid gray;
+        border-radius: 5px;
+            margin-top: 30px
+        }
+        .login_div1{
+            border-bottom:
+                1px solid gray;
+            height: 50px;
+        }
+        .login_div div span{font-size:20px;
+            padding-left: 15px;
+            line-height: 50px}
+        .login_div div input{outline: medium;
+            background-color: transparent}
+.last{width: 90%;
+height: 50px;
+text-align: center;
+font-size: 20px;
+margin: 0 auto;
+border: 1px solid ;
+background: #205AA3;
+border-radius: 5px;
+margin-top: 30px}
+    </style>
+
+</head>
+<body>
+<!--part1-->
+<header><span>登录</span></header>
+<!--part2-->
+<div class="login_img1"><img   src="Resource/head.png" alt=""></div>
+<!--part3-->
+<div class="login_div">
+    <div class="login_div1">
+        <span>用户名：</span>
+        <input type="text"  id="L_account" value="" style="border: 0px" >
+    </div>
+    <div>
+        <span>密码：</span>
+        <input type="password" id="L_pwd" value="" style="border: 0px">
+    </div>
+</div>
+<!--part4-->
+<div class="last">
+    <input type="button" value="登录"
+           id="l_btn"
+           style="font-size: 20px;background: #205AA3;border: 0px;padding-top: 10px;outline: medium;
+background-color: transparent;color: white">
+    <script>
+
+        var btn=document.querySelector("#l_btn");
+        btn.onclick = function () {
+//            创建一个请求对象
+  var userName=encodeURIComponent(document.querySelector("#L_account").value);
+            var pwd=encodeURIComponent(document.querySelector("#L_pwd").value);
+// var xhl=new XMLHttpRequest();
+//建立连接
+// xhl.open('post','https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/login')
+        //设置头信息，以表单的形式传输
+        //     xhl.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        //   向服务端发送请求
+            var par="username="+ userName +"&pwd="+pwd;
+           requestmethod('post','login',par,function (str) {
+               if(str=="登录成功"){
+                   location.href="dropletservices.html";}
+               else{alert(str)}
+
+            })
+
+            // xhl.send(par);
+        //    接收服务器请求的数据
+        //     xhl.onreadystatechange=function () {
+        //         if(xhl.readyState==4&&xhl.status==200){
+        //             var responsedata = JSON.parse(xhl.responseText);
+        //             var str=responsedata.data;
+
+            //     }
+            // }
+        //     var userName = document.querySelector("#L_account").value;
+        //     var password = document.querySelector("#L_pwd").value;
+        //     if (userName == "" || password == "") {
+        //         alert("亲，请输入用户名或密码");
+        //     }
+        //     else if (userName == "hskj" && password == "123456") {
+        //         location.href = "dropletservices.html"
+        //     }
+        //     else {alert("用户名或密码错误")}
+        }
+
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{padding-top: 44px;
+    padding-bottom: 5px}
+header{
+    line-height: 44px;
+    font-size: 18px;
+    background: #2083CC;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+}
+.img1{width: 100%;
+height: 200px}
+
+.dv_1{
+    position: relative}
+.dv_2{
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    width: 66px;
+    height: 76px;
+    margin-left: -33px;
+    margin-top: -60px;
+    position: absolute;
+    text-align: center;}
+.dv_1.dv_2 button{margin-top: 5px}
+.dv_3{width: 90%;height: 50px;border: 1px #CCCCCC solid;border-radius: 5px;
+    line-height: 50px;margin: 0 auto;margin-top: 10px}
+.i1_1{float: left;padding-top: 15px;padding-left: 10px;padding-bottom: 10px}
+.i1_2{float: right;padding-top: 15px;padding-bottom: 10px;padding-right: 10px}
+.dv_3 span{float: left;padding-left: 20px;font-size: 15px}
+.part4 ul li span{
+    display: block;
+    font-size: 10px;
+
+}
+.part4 ul{
+    display: table;
+    width: 100%;
+    background: white;
+    height: 5px;
+    margin-bottom: 0px;
+}
+.part4 li{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;}
+.part4 ul li{
+    background: black;color: white;
+}
+.part4 ul li img{width: 20px;height: 20px}
+.part4 {width: 100%;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;}

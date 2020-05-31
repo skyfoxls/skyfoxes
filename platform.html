@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>刘顺/平台风采</title>
+    <link rel="short icon" href="Resource/icon.png">
+    <link rel="stylesheet" href="zhuyemian.css">
+    <style>
+        h3{
+            margin: 10px;
+            color: red;
+        }
+        h4{margin: 10px;}
+        p{text-indent: 2em;
+        font-size: 15px;
+        line-height: 2em}
+        article{padding-bottom: 49px}
+    </style>
+</head>
+<body>
+<!--part1-->
+<header><span>平台风采</span></header>
+<!--part2-->
+<section class="part2"><img src="Resource/banner4.png" alt="请检查一下网络"></section>
+<!--part3-->
+<article>
+    <h3 id="title"></h3>
+    <h4 id="subTitle"></h4>
+    <p id="info"></p>
+    <script>
+        //            创建一个请求对象
+
+    var xhl=new XMLHttpRequest();
+    //建立连接
+        xhl.open('get','https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/aboutus')
+    //设置头信息，以表单的形式传输
+    xhl.setRequestHeader("content-type","application/x-www-form-urlencoded");
+    //   向服务端发送请求
+ xhl.send();
+    //    接收服务器请求的数据
+    xhl.onreadystatechange=function () {
+        if (xhl.readyState == 4 && xhl.status == 200) {
+            var responsedata = JSON.parse(xhl.responseText);
+            var obj = responsedata.data;
+        var h3=document.getElementById("title");
+        var h4=document.getElementById("subTitle");
+        var p=document.getElementById("info");
+        h3.innerHTML=obj.title;
+        h4.innerHTML=obj.subTitle;
+        p.innerHTML=obj.info;
+        }
+    }
+    </script>
+
+</article>
+<!--part4-->
+<footer class="part4">
+    <ul>
+        <li>
+            <a href="dropletservices.html">
+                <img src="Resource/nav10.png" alt="">
+            </a>
+            <span >小滴服务</span></li>
+        <li><a href="innovation%20program.html">
+            <img src="Resource/nav20.png" alt=""></a>
+            <span>企业项目</span></li>
+        <li><a href="serviceproceed.html">
+            <img src="Resource/nav30.png" alt=""></a>
+            <span>服务流程</span></li>
+        <li><a href="platform.html">
+            <img src="Resource/nav41.png" alt=""></a>
+            <span style="color: red">平台风采</span></li>
+        <li><a href="mydroplet.html">
+            <img src="Resource/nav50.png" alt=""></a>
+            <span>我的小滴</span></li>
+    </ul>
+</footer>
+</body>
+</html>

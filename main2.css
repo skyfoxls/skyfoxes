@@ -1,0 +1,89 @@
+*{margin: 0px;
+padding: 0px}
+body{
+padding-top: 88px;
+    padding-bottom: 49px;
+}
+header{
+    line-height: 44px;
+    font-size: 18px;
+    background: #2083CC;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+}
+.ds_2 img{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.ds_4{text-align: center;background: white}
+.img1{width: 100%}
+.ds_4 p{  font-size: 10px;
+    color:gray;}
+.ds_5{text-align: center;background: white}
+.img2{width: 100%}
+.ds_6{text-align: left;
+font-size: 10px;
+color: gray;
+margin-left: 20px}
+.zi_1{font-size: 13px}
+.zi_2{font-size: 13px}
+.zi_3{font-size: 13px;text-align: center}
+.ds_7 p{font-size: 10px;
+color: gray}
+.ds_7{margin-left: 20px}
+.ds_8{text-align: center}
+.ds_1{
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+}
+.ds_1 ul{
+    display: table;
+    width: 100%;
+    margin-top: 44px;
+    line-height: 44px;
+}
+.ds_1 li{
+    display: table-cell;
+    width: 33.3%;}
+.ds_1 ul li{
+    text-align: center;
+
+}
+.ds_1 ul li a span{
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.ds_1 ul li a{text-decoration: none;}
+.part4 ul li span{
+    display: block;
+    font-size: 10px;
+
+}
+.part4 ul{
+    display: table;
+    width: 100%;
+    background: white;
+    height: 5px;
+    margin-bottom: 0px;
+}
+.part4 li{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;}
+.part4 ul li{
+    background: black;color: white;
+}
+.part4 ul li img{width: 20px;height: 20px}
+.part4 {width: 100%;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;}
